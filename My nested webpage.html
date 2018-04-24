@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My nested webpage</title>
+
+
+    <style>
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: blue
+        }
+
+        nav>ul>li {
+            float: left;
+            clear: left;
+            white-space: nowrap;
+            color: blue
+        }
+
+        nav ul li ul {
+            position: absolute;
+            display: inline-block;
+            visibility: hidden;
+            background-color: palegreen;
+        }
+
+        nav li:hover>ul {
+            visibility: visible;
+
+        }
+
+        li {
+            margin: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                Breakfast
+                <ul>
+                    <li>
+                        coffee
+                    </li>
+                    <li>
+                        pancakes
+                        <ul>
+                            <li>milk</li>
+                            <li>flouer</li>
+                            <li>eggs</li>
+                        </ul>
+                    </li>
+                    <li>scrambled eggs
+                        <ul>
+                            <il>Eggs</il>
+                            <li>salt</li>
+                            <li>Oil</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Lunch
+                <ul>
+                    <il>Soup
+                        <ul>
+                            <li>water</li>
+                            <li>Vegetables</li>
+                            <li>Meat</li>
+                        </ul>
+                    </il>
+                    <li>
+                        steak
+                        <ul>
+                            <li>Meat</li>
+                            <li>potatoes</li>
+                            <li>salades</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li>
+                Dinner
+                <ul>
+                    <li>soup
+                        <ul>
+                            <li>water</li>
+                            <li>vegetables</li>
+                            <li>Meat</li>
+                        </ul>
+                    </li>
+                    <li>Grilledfish
+                        <ul>
+                            <li>fish</li>
+                            <li>beans</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
