@@ -1,8 +1,6 @@
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
     background-color: #333;
 }
 
@@ -24,4 +22,12 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
+}
+.parallax {
+    background-image: url("R.E.B logo.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
