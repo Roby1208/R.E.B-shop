@@ -2,48 +2,64 @@
 <html>
 
 <head>
-    <title>REB</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
 </head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;
+    }
+</style>
 
 <body>
+
     <ul>
         <li>
-            <a href="home.html">Home</a>
+            <a href="Home.html">Home</a>
         </li>
         <li>
-            <a class="active" href="Products.html">Product</a>
+            <a class="active" href="PRODUCTS.html">Products</a>
         </li>
         <li>
-            <a href="About.html">About</a>
+            <a href="ABOUT.html">About</a>
+        </li>
+        <li style="float:right">
+            <a class="active" href="PRODUCTS.html">
+                <img src="eg.jpg" width="40" height="25" />
+            </a>
+        </li>
+        <li style="float:right">
+            <a href="PRODUCTS(FR).html">
+                <img src="fr2.jpg" width="40" height="25" />
+            </a>
         </li>
     </ul>
 </body>
