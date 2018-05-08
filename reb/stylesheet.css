@@ -21,7 +21,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #DAA520;
 }
 .parallax {
     background-image: url("R.E.B logo.png");
