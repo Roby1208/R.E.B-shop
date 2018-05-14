@@ -36,3 +36,6 @@ li a:hover:not(.active) {
     background: red; 
     background: linear-gradient(to bottom right, red, yellow); 
 }
+.align{
+    align-items: flex-start
+}
