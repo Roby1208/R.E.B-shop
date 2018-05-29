@@ -39,3 +39,6 @@ li a:hover:not(.active) {
 .align{
     align-items: flex-start
 }
+.centerimg{
+    text-align: center
+}
