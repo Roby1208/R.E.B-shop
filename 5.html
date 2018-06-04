@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+    <title>5</title>
+    <style>
+        /*
+        https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+        https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/
+        https://www.w3schools.com/howto/howto_css_fixed_menu.asp
+        */
+
+        /*
+        This is to show the creation of a navigation bar using flexbox 
+        Some animation is added using a two layered div transformation  ....
+        Note: the two divs (one stacking on top of the other) are inside a flexbox that sits inside a flexbox container !
+        */
+
+        .nav1 {
+            top: 0;
+            margin-left:10px;/* Give it some space around*/
+            border: 1px solid black;
+            
+
+            position: fixed;/*stay on page !*/
+            display: flex;/*define the flex container*/
+            width: 95%; /*100% - less the space*/
+            /*height: 100px;/* height of bar*/
+            flex-direction: row;/*default - on row */
+            align-items: center;/*center items inside the bar vertically*/
+            background-color: yellow;
+        }
+
+        .content1 {
+            display: inline-block;
+            background-color: yellowgreen;
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+        }
+
+
+        .nav1>div:nth-child(5) {/*select the 5th element - starting this one go on the right side !*/
+            margin-left: auto;/* !!!!! override the flex arrangement !*/
+        }
+
+        .PlaceHolder>* {/*all language placeholders*/
+            position: absolute;/*get absolute positioning*/
+            background-color: aqua;
+            border: 1px solid black;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            vertical-align: middle;
+            cursor:pointer;
+        }
+
+        .LangHidden {
+            transform: translateY(0);
+            z-index: 5;/*bigger that 0 = default BUT lower then 10 - the shown layer */
+            transition: all 1s;
+        }
+
+        .PlaceHolder:hover .LangHidden {
+            transform: translateY(100%);
+        }
+
+        .LangShown {
+            z-index: 10;
+        }
+
+/* Non navigation related */
+        .main {
+            padding: 16px;
+            margin-top: 100px;
+            height: 1500px;
+            /* Used in this example to enable scrolling */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav1">
+        <div class="content1">
+        </div>
+        <div class="content1">
+        </div>
+        <div class="content1">
+        </div>
+        <div class="content1">
+        </div>
+
+
+        <div class="content1">
+        </div>
+
+        <div class="content1">
+            <div class="PlaceHolder">
+                <div class="LangShown">
+                    French
+                </div>
+                <div class="LangHidden">
+                    English
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="main">
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+    </div>
+
+
+
+</body>
+
+</html>
