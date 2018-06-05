@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
 </head>
-                <body>
-                
-                <ul>
-                  <li> <a href="Home.html">Home</a></li>
-                  <li><a class="active" href="PRODUCTS.html">Products</a></li>
-                  <li><a href="ABOUT.html">About</a></li>
-                  <li style="float:right"><a href="PRODUCTS.html"><img src="eg.jpg" width="40" height="25" /></a></li>
-                    <li style="float:right"><a class="active" href="PRODUCTS(FR).html"><img src="fr2.jpg" width="40" height="25" /></a></li>
-                  </ul> 
-                  <div class="parallax"></div>
+<body>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+    <ul>
+        <li>
+            <a href="Home.html">Home</a>
+        </li>
+        <li>
+            <a class="active" href="PRODUCTS.html">Products</a>
+        </li>
+        <li>
+            <a href="ABOUT.html">About</a>
+        </li>
+        <li style="float:right">
+            <a href="PRODUCTS.html">
+                <img src="eg.jpg" width="40" height="25" />
+            </a>
+        </li>
+        <li class="active" style="float:right">
+            <a href="PRODUCTS(FR).html">
+                <img src="fr2.jpg" width="40" height="25" />
+            </a>
+        </li>
+    </ul>
+    <div class="parallax"></div>
 
-                  <div id="bg" style="height:1000px;font-size:50px">
-                      <h style="color:rgb(255, 255, 255)">Ici sont nos Produits</h>
-                  </div>    
+    <div style="height:1000px;background-color:white;font-size:50px">
+        <h3>Here are our Products</h3>
+        
+    
+    <div class="row">
+            <div class="column">
+              <img src="erbsen.jpg" alt="Fjords" style="width:300px;height:200px">
+              <figcaption class="centerimg">PEAS<br>2,99€/kg</figcaption>
+            </div>
+            <div class="column">
+              <img src="karotten.jpg" alt="Forest" style="width:300px;height:200px">
+              <figcaption class="centerimg">CARROTS<br>5€/kg</figcaption>
+            </div>
+            <div class="column">
+              <img src="apfel.jpg" alt="Mountains" style="width:300px;height:200px">
+              <figcaption class="centerimg">APPLE<br>4,55€/kg</figcaption>
+            </div>
+          </div>
+          
 </body>
+
 </html>
