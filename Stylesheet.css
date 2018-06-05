@@ -33,18 +33,20 @@ div {
 
     h1 {
      color: rgb(15, 253, 7);
-     font-size: 550%;
-     font-style: italic;
+     font-size: 500%;
+     font-style:"Monotype Corsiva";
  }
  .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color:green;
+    color:black;
     text-align: center;
- }
+    font-family: "Harrington";
+    text-align: center;
+}
  img {
     display: block;
     margin-left: auto;
@@ -63,4 +65,15 @@ div {
     content: "";
     clear: both;
     display: table;
+}
+h1 {
+    font-family: "Monotype Corsiva";
+}
+h2 {
+    font-family: "Monotype Corsiva";
+    color: green;
+}
+p {
+    font-family: "Monotype Corsiva";
+    color: green;
 }
