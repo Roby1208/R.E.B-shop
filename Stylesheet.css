@@ -53,13 +53,6 @@ h1 {
     font-size: 18px;
 }
 
-img {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-}
-
 .l {
     width: 100%;
 }
@@ -94,4 +87,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+
+.someContainer img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 600px;
+}
+
+.someContainer{
+    background-color: tomato;
+
 }
