@@ -2,7 +2,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:hidden;
+    width: 100%;
     background-color: #333;
 }
 
@@ -26,17 +27,17 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
 }
 
-
 div {
-        text-align: center;
-    }
+    text-align: center;
+}
 
-    h1 {
-     color: green;
-     font-size: 500%;
-     font-style:"Monotype Corsiva";
+h1 {
+    color: green;
+    font-size: 500%;
+    font-style:"Monotype Corsiva";
  }
- .footer {
+
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -47,36 +48,35 @@ div {
     font-family: "Harrington";
     text-align: center;
 }
- img {
+
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
- }
+}
+
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 h1 {
     font-family: "Monotype Corsiva";
     text-align: center;
 }
+
 h2 {
     font-family: "Monotype Corsiva";
     color: green;
 }
+
 p {
     font-family: "Monotype Corsiva";
     color: green;
 }
+
 body {
     background-image:url("reb.jpg");
     background-repeat: no-repeat;
