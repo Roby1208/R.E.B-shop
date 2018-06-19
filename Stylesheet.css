@@ -74,22 +74,12 @@ h1 {
 
 h2 {
     font-family: "Monotype Corsiva";
-    color: whitesmoke;
+    color: green;
 }
 
 p {
     font-family: "Monotype Corsiva";
-    color: whitesmoke;
-}
-
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
-html{
-    background-image:url("b.jpg");
-    background-repeat: no-repeat;
+    color: green;
 }
 
 .someContainer img {
@@ -109,6 +99,9 @@ html{
     display: flex;
     flex-direction: column;
 }
-.cent {
+.c {
     text-align: center;
+}
+p{
+    font-size: 25px;
 }
