@@ -32,8 +32,8 @@ div {
 }
 
 h1 {
-    color: green;
-    font-size: 500%;
+    color:whitesmoke;
+    font-size: 600%;
     font-style:"Monotype Corsiva";
 }
 
@@ -63,15 +63,23 @@ h1 {
 
 h2 {
     font-family: "Monotype Corsiva";
-    color: green;
+    color:whitesmoke;
+    font-size: 35px;
 }
 
 p {
     font-family: "Monotype Corsiva";
-    color: green;
-    font-size: 25px;
+    color:whitesmoke;
+    font-size: 30px;
 }
 
 .c {
     text-align: center;
+}
+
+body{
+    background-image: url("San-Francisco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
