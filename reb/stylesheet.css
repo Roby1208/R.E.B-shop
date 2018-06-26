@@ -1,7 +1,7 @@
 ul {
     list-style-type: none;
-
     background-color: #333;
+    z-index: 100;
 }
 
 li {
@@ -33,8 +33,7 @@ li a:hover:not(.active) {
 }
 #bg {
     height: 200px;
-    background: red; 
-    background: linear-gradient(to bottom right, red, yellow); 
+    background:white; 
 }
 .align{
     align-items: flex-start

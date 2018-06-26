@@ -26,17 +26,77 @@
         clear: both;
         display: table;
     }
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
 </style>
     <ul>
         <li>
-            <a href="Home.html">Home</a>
+            <a href="Home.html">Accueil</a>
         </li>
         <li>
-            <a class="active" href="PRODUCTS.html">Products</a>
+            <a class="active" href="PRODUCTS.html">Produits</a>
         </li>
         <li>
-            <a href="ABOUT.html">About</a>
+            <a href="ABOUT.html">A propos</a>
         </li>
+        <li style="float:right">
+            
         <li style="float:right">
             <a href="PRODUCTS.html">
                 <img src="eg.jpg" width="40" height="25" />
@@ -51,24 +111,49 @@
     <div class="parallax"></div>
 
     <div style="height:1000px;background-color:white;font-size:50px">
-        <h3>Here are our Products</h3>
+        <h3>Ici sont nos pruduits</h3>
         
-    
-    <div class="row">
-            <div class="column">
-              <img src="erbsen.jpg" alt="Fjords" style="width:300px;height:200px">
-              <figcaption class="centerimg">PEAS<br>2,99€/kg</figcaption>
-            </div>
-            <div class="column">
-              <img src="karotten.jpg" alt="Forest" style="width:300px;height:200px">
-              <figcaption class="centerimg">CARROTS<br>5€/kg</figcaption>
-            </div>
-            <div class="column">
-              <img src="apfel.jpg" alt="Mountains" style="width:300px;height:200px">
-              <figcaption class="centerimg">APPLE<br>4,55€/kg</figcaption>
-            </div>
-          </div>
-          
+        <div class="main">
+                <hr>          
+                
+                <div class="row">
+                  <div class="column">
+                    <div class="content">
+                      <img src="erbsen.jpg" style="width:100%">
+                      <h3>Pois</h3>
+                      <p>2.99€</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="karotten.jpg"  style="width:100%">
+                      <h3>Carottes</h3>
+                      <p>3,05€/kg</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="apfel.jpg" style="width:100%">
+                      <h3>Pomme</h3>
+                      <p>2,99€/kg</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="tomaten.jpg" style="width:100%">
+                      <h3>Tomto</h3>
+                      <p>3.55€/kg</p>
+                    </div>
+                  </div>
+         </div>
+                
+                <div class="content">
+                  <img src="burstburger.png" style="width:100%">
+                  <h3>nouveau restaurant dans le R.E.B-shop</h3>
+                  <p>Tratitional burgers</p>
+                </div>
+                
+                </div>
 </body>
 
 </html>

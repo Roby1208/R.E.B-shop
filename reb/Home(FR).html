@@ -1,26 +1,167 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css" />
 </head>
-       
-                <body>
-                
-                <ul>
-                  <li> <a class="active" href="Home.html">Home</a></li>
-                  <li><a href="PRODUCTS.html">Products</a></li>
-                  <li><a href="ABOUT.html">About</a></li>
-                  <li style="float:right"><a href="HOME.html"><img src="eg.jpg" width="40" height="25" /></a></li>
-                    <li style="float:right"><a class="active" href="HOME(FR).html"><img src="fr2.jpg" width="40" height="25" /></a></li>
-                  </ul>
-                  <div class="parallax"></div>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    * {
+    box-sizing: border-box;
+}
 
-                  <div id="bg" style="height:1000px;font-size:50px">
-                      <h style="color:rgb(255, 255, 255)">Welcome chez R.E.B-Market</h>
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <ul>
+        <li>
+            <a class="active" href="Home.html">Home</a>
+        </li>
+        <li>
+            <a href="PRODUCTS.html">Products</a>
+        </li>
+        <li>
+            <a href="ABOUT.html">About</a>
+        </li>       
+        <li style="float:right">
+            <a href="Home.html">
+                <img src="eg.jpg" width="40" height="25" />
+            </a>
+        </li>
+        <li class="active" style="float:right">
+            <a href="Home(FR).html">
+                <img src="fr2.jpg" width="40" height="25" />
+            </a>
+        </li>
+    </ul>
+    <div class="parallax"></div>
+
+    <div style="height:1000px;background-color:white;font-size:50px">
+        <h3>Home</h3>
+        <div class="main">
+                <hr>          
+                <div class="row">
+                  <div class="column">
+                    <div class="content">
+                      <img src="promotion1.jpg" style="width:100%">
+                      <h3>nouveau 4 item pour 10€ shop</h3>                      
+                    </div>
+                </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="promotion2.jpg"  style="width:100%">
+                      <h3>promotion dans R.E.B-shop</h3>
+                    </div>
                   </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="promotion3.jpg" style="width:100%">
+                      <h2>pus que 50 items de plus</h2>
+                    </div>
+                  </div>
+            </div>
+         </div>
+         <div class="content">
+            <img src="burstburger.png" style="width:100%">
+            <h3>nouveau burgers dans le R.E.B-Store</h3>
+            <p>Tratitional burgers</p>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="bakon.jpg" style="width:100%">
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="blackburger.jpg" style="width:100%">
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="pizza.jpg" style="width:100%">
+            <h3>nouveau dans burst - burger </h3>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+            <img src="limited.jpg" style="width:110%">
+            <h3>nouveau limited burgerseulement pur 4 semains</h3>
+            </div>
+          </div>
+        </div>           
+               
 </body>
+
 </html>
