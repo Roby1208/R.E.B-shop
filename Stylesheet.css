@@ -34,7 +34,7 @@ div {
 h1 {
     color:whitesmoke;
     font-size: 600%;
-    font-style:"Monotype Corsiva";
+    font-style:"Castellar";
 }
 
 .f { 
@@ -59,18 +59,32 @@ h1 {
 h1 {
     font-family: "Monotype Corsiva";
     text-align: center;
+    color:red;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h2 {
-    font-family: "Monotype Corsiva";
+    font-family: "Georgia";
     color:whitesmoke;
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 p {
-    font-family: "Monotype Corsiva";
+    font-family: "Georgia";
     color:whitesmoke;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
 }
 
 .c {
